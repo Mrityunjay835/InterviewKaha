@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Transaction Data"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/edit_userid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head"
+        android:hint="Enter User ID"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edit_dot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_userid"
+        android:hint="Enter Transaction Date"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/edit_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_dot"
+        android:hint="Enter Transaction Amount"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:id="@+id/lout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/edit_amount">
+        <Button
+            android:id="@+id/btn_t_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Insert"/>
+
+        <Button
+            android:id="@+id/btn_display2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Display"/>
+
+        <Button
+            android:id="@+id/btn_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="User"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
